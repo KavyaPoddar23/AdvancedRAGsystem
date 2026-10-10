@@ -1,0 +1,8 @@
+google-genai
+python-dotenv
+sentence-transformers
+rank-bm25
+numpy
+pypdf
+streamlit
+pytest

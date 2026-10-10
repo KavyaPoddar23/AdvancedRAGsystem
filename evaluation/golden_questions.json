@@ -1,0 +1,64 @@
+
+[
+  {
+    "id": "eval_001",
+    "question": "How can SQL injection be prevented?",
+    "expected_sources": ["07_sql_injection.txt"],
+    "expected_keywords": [
+      "parameterized queries",
+      "prepared statements",
+      "input validation"
+    ],
+    "should_abstain": false
+  },
+  {
+    "id": "eval_002",
+    "question": "What is the difference between vector search and BM25?",
+    "expected_sources": ["11_hybrid_retrieval.txt"],
+    "expected_keywords": [
+      "vector",
+      "BM25",
+      "keyword"
+    ],
+    "should_abstain": false
+  },
+  {
+    "id": "eval_003",
+    "question": "What is the purpose of embeddings in a RAG system?",
+    "expected_sources": ["09_embeddings_and_vector_search.txt"],
+    "expected_keywords": [
+      "embeddings",
+      "semantic",
+      "similarity"
+    ],
+    "should_abstain": false
+  },
+  {
+    "id": "eval_004",
+    "question": "How should a Python application test its code?",
+    "expected_sources": ["03_python_testing.txt"],
+    "expected_keywords": [
+      "tests",
+      "assertions"
+    ],
+    "should_abstain": false
+  },
+  {
+    "id": "eval_005",
+    "question": "What is the population of Mars?",
+    "expected_sources": [],
+    "expected_keywords": [],
+    "should_abstain": true
+  },
+  {
+    "id": "eval_006",
+    "question": "What evidence should a RAG system use to produce a grounded answer?",
+    "expected_sources": ["12_rag_evaluation_and_grounding.txt"],
+    "expected_keywords": [
+      "evidence",
+      "sources",
+      "citations"
+    ],
+    "should_abstain": false
+  }
+]

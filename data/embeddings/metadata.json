@@ -1,0 +1,86 @@
+[
+  {
+    "chunk_id": "01_python_basics.txt-all-1",
+    "text": "﻿Python is a general-purpose programming language used for scripting, automation, web development, data analysis, and artificial intelligence. Its syntax emphasizes readability. Python supports procedural, object-oriented, and functional programming. Variables refer to objects, and Python uses dynamic typing. Functions are defined with the def keyword. Exceptions can be handled with try and except blocks.",
+    "source": "01_python_basics.txt",
+    "page": null,
+    "chunk_index": 1
+  },
+  {
+    "chunk_id": "02_python_data_structures.txt-all-1",
+    "text": "﻿Python provides built-in data structures including lists, tuples, dictionaries, and sets. A list is ordered and mutable. A tuple is ordered and immutable. A dictionary stores key-value pairs. A set stores unique elements and is useful for membership checks and removing duplicates. Choosing the appropriate data structure can improve code clarity and performance.",
+    "source": "02_python_data_structures.txt",
+    "page": null,
+    "chunk_index": 1
+  },
+  {
+    "chunk_id": "03_python_testing.txt-all-1",
+    "text": "﻿Software testing checks whether a program behaves as expected. Unit tests validate small, isolated pieces of functionality. Python supports testing with the pytest framework. Tests commonly use assertions to compare actual results with expected results. Edge cases should include empty input, invalid values, boundary conditions, and unexpected errors. Automated tests help prevent regressions when code changes.",
+    "source": "03_python_testing.txt",
+    "page": null,
+    "chunk_index": 1
+  },
+  {
+    "chunk_id": "04_rest_api_basics.txt-all-1",
+    "text": "﻿A REST API allows software systems to communicate over HTTP. Common HTTP methods include GET for retrieving resources, POST for creating resources, PUT or PATCH for updating resources, and DELETE for deleting resources. HTTP status codes communicate the result of a request. APIs commonly exchange JSON data. Clear request validation and consistent error responses make APIs easier to use.",
+    "source": "04_rest_api_basics.txt",
+    "page": null,
+    "chunk_index": 1
+  },
+  {
+    "chunk_id": "05_api_security.txt-all-1",
+    "text": "﻿API security includes authentication, authorization, input validation, rate limiting, and secure transport. Authentication establishes who or what is making a request. Authorization determines which resources the requester may access. API keys and access tokens must be stored securely and must not be committed to source control. HTTPS protects data in transit. Sensitive information should not be exposed in error messages or logs.",
+    "source": "05_api_security.txt",
+    "page": null,
+    "chunk_index": 1
+  },
+  {
+    "chunk_id": "06_sql_and_databases.txt-all-1",
+    "text": "﻿Relational databases store data in tables containing rows and columns. SQL is used to query and manage relational data. A primary key uniquely identifies a row. A foreign key represents a relationship between tables. Indexes can accelerate selected queries but require additional storage and can increase the cost of writes. Database transactions help maintain consistency when multiple operations must succeed together.",
+    "source": "06_sql_and_databases.txt",
+    "page": null,
+    "chunk_index": 1
+  },
+  {
+    "chunk_id": "07_sql_injection.txt-all-1",
+    "text": "﻿SQL injection occurs when untrusted input is incorporated into a database query in an unsafe way. An attacker may alter the intended meaning of a query. Parameterized queries or prepared statements are a primary defense because values are passed separately from SQL instructions. Applications should use least-privilege database accounts, validate inputs, and avoid exposing database errors to users.",
+    "source": "07_sql_injection.txt",
+    "page": null,
+    "chunk_index": 1
+  },
+  {
+    "chunk_id": "08_machine_learning_basics.txt-all-1",
+    "text": "﻿Machine learning uses data to train models that identify patterns or make predictions. Supervised learning uses labeled examples. Unsupervised learning looks for structure in data without target labels. A dataset is often divided into training, validation, and test sets. Evaluation metrics should match the task. Accuracy alone may be misleading for imbalanced classification problems, where precision, recall, and F1 score can provide additional insight.",
+    "source": "08_machine_learning_basics.txt",
+    "page": null,
+    "chunk_index": 1
+  },
+  {
+    "chunk_id": "09_embeddings_and_vector_search.txt-all-1",
+    "text": "﻿Text embeddings represent text as numerical vectors. Semantically similar pieces of text may have vectors that are close under a similarity measure such as cosine similarity. Vector search retrieves passages based on embedding similarity. Retrieval quality depends on the embedding model, text preprocessing, chunk size, and query wording. Vector search can miss exact terms, identifiers, or rare keywords, so combining it with keyword retrieval can be useful.",
+    "source": "09_embeddings_and_vector_search.txt",
+    "page": null,
+    "chunk_index": 1
+  },
+  {
+    "chunk_id": "10_rag_architecture.txt-all-1",
+    "text": "﻿Retrieval-augmented generation, or RAG, combines information retrieval with language model generation. A typical pipeline ingests documents, splits them into chunks, creates embeddings, retrieves relevant passages, and supplies those passages as context to a language model. A RAG system should distinguish retrieved evidence from model-generated language. Source metadata should be preserved so answers can cite the documents that support their claims.",
+    "source": "10_rag_architecture.txt",
+    "page": null,
+    "chunk_index": 1
+  },
+  {
+    "chunk_id": "11_hybrid_retrieval.txt-all-1",
+    "text": "﻿Hybrid retrieval combines multiple retrieval methods, commonly dense vector retrieval and sparse keyword retrieval such as BM25. Vector retrieval can identify semantic similarity even when wording differs. BM25 scores the relevance of query terms in documents. A fusion method such as reciprocal rank fusion can combine ranked lists without requiring their raw scores to share the same scale. Hybrid retrieval may improve coverage for both conceptual questions and exact-term queries.",
+    "source": "11_hybrid_retrieval.txt",
+    "page": null,
+    "chunk_index": 1
+  },
+  {
+    "chunk_id": "12_rag_evaluation_and_grounding.txt-all-1",
+    "text": "﻿A grounded RAG answer should be supported by the retrieved evidence. Citations should identify the source passage used for a claim. If the available documents do not contain enough information, the system should clearly say that it cannot answer from the available evidence. RAG evaluation can measure retrieval relevance, answer correctness, faithfulness to context, citation quality, latency, and cost. A fixed set of questions with known answers helps compare system changes consistently.",
+    "source": "12_rag_evaluation_and_grounding.txt",
+    "page": null,
+    "chunk_index": 1
+  }
+]

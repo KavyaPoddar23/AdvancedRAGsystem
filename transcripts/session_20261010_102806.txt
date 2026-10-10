@@ -1,0 +1,14 @@
+Session ID: rag-session
+Created at: 2026-10-10T10:20:59.734140+00:00
+------------------------------------------------------------
+[2026-10-10T10:24:02.709391+00:00] USER:
+How can SQL injection be prevented?
+
+[2026-10-10T10:24:02.709391+00:00] ASSISTANT:
+SQL injection can be prevented primarily by using parameterized queries or prepared statements, which pass values separately from SQL instructions [S1]. Additionally, applications should validate inputs, use least-privilege database accounts, and avoid exposing database errors to users [S1].
+
+[2026-10-10T10:27:36.873380+00:00] USER:
+What is the first method you mentioned?
+
+[2026-10-10T10:27:36.873380+00:00] ASSISTANT:
+Parameterized queries or prepared statements are a primary defense against SQL injection where values are passed separately from SQL instructions [S1].

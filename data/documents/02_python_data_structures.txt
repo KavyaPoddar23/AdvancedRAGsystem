@@ -1,0 +1,1 @@
+﻿Python provides built-in data structures including lists, tuples, dictionaries, and sets. A list is ordered and mutable. A tuple is ordered and immutable. A dictionary stores key-value pairs. A set stores unique elements and is useful for membership checks and removing duplicates. Choosing the appropriate data structure can improve code clarity and performance.
