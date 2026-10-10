@@ -1,10 +1,10 @@
-# Advanced RAG System 
+# Advanced RAG System
 
 A local Retrieval-Augmented Generation (RAG) application that answers questions using a document knowledge base. The pipeline combines semantic vector search with BM25 keyword retrieval, fuses results, reranks passages, grades evidence, and generates answers with source references. It also supports query transformation, corrective retrieval, and conversational memory.
 
 The project includes a Streamlit interface for interactive Q&A, source inspection, conversation history, and session-state inspection.
 
-The application uses the Gemini API. Successful operation depends on network connectivity, model access, and available API quota. 
+The application uses the Gemini API. Successful operation depends on network connectivity, model access, and available API quota.
 
 ## Features
 
@@ -127,7 +127,7 @@ Some data and output files are generated when ingestion, indexing, and evaluatio
 ### 1. Clone the Repository
 
 ```powershell
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone https://github.com/KavyaPoddar23/AdvancedRAGsystem.git
 cd dotkonnekt-advanced-rag
 ```
 
@@ -231,6 +231,7 @@ The project uses task-specific prompts for different stages of the RAG pipeline.
 **Purpose:** Transform the user's question into one or more retrieval-friendly queries while preserving its intended meaning.
 
 **Design rationale:**
+
 - Generate a small set of useful query variants.
 - Decompose multi-part questions when separate retrieval queries can improve coverage.
 - Preserve the intent of the original question.
@@ -241,6 +242,7 @@ The project uses task-specific prompts for different stages of the RAG pipeline.
 **Purpose:** Rewrite follow-up questions as standalone questions using the previous conversation.
 
 **Design rationale:**
+
 - Resolve references such as “it,” “that,” or “the first method.”
 - Preserve the user's intended meaning.
 - Do not answer the question during the resolution step.
@@ -252,6 +254,7 @@ The project uses task-specific prompts for different stages of the RAG pipeline.
 **Purpose:** Determine whether retrieved passages provide enough relevant evidence to answer the question.
 
 **Design rationale:**
+
 - Evaluate retrieved context against the user's question.
 - Return a structured sufficiency decision and reason.
 - Use the reason to guide a corrective retrieval attempt when evidence is weak.
@@ -262,6 +265,7 @@ The project uses task-specific prompts for different stages of the RAG pipeline.
 **Purpose:** Generate an answer grounded in retrieved passages and identify the sources supporting it.
 
 **Design rationale:**
+
 - Use retrieved context instead of unsupported outside knowledge.
 - Associate claims with source identifiers from the retrieved evidence.
 - Validate returned citations against the available context.
@@ -284,14 +288,14 @@ The project includes `evaluation/golden_questions.json`, a six-question evaluati
 
 The evaluation run on **10 October 2026** reported the following results:
 
-| Metric | Recorded Result |
-|---|---:|
-| Total cases | 6 |
-| Successful cases | 4 |
-| Service errors | 2 |
-| Source hit rate | 1.000 |
-| Average keyword coverage | 0.889 |
-| Abstention accuracy | 1.000 |
+| Metric                   | Recorded Result |
+| ------------------------ | --------------: |
+| Total cases              |               6 |
+| Successful cases         |               4 |
+| Service errors           |               2 |
+| Source hit rate          |           1.000 |
+| Average keyword coverage |           0.889 |
+| Abstention accuracy      |           1.000 |
 
 ### Interpretation
 
@@ -359,4 +363,4 @@ to answer that reliably.
 
 ## Submission
 
-GitHub Repository: <YOUR_GITHUB_REPOSITORY_URL>
+GitHub Repository: https://github.com/KavyaPoddar23/AdvancedRAGsystem.git
